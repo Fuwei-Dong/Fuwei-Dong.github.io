@@ -252,4 +252,207 @@
             border-radius: 20px;
             font-size: 0.9rem;
             margin-left: 10px;
-            box-shado
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .pub-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .pub-links a {
+            color: #4facfe;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background: rgba(79, 172, 254, 0.1);
+        }
+
+        .pub-links a:hover {
+            color: #1a2a6c;
+            transform: translateY(-2px);
+            background: rgba(79, 172, 254, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.05);
+        }
+
+        @media (max-width: 768px) {
+            .research-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .contact-links {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile Photo" class="profile-img">
+            <h1>Fuwei Dong</h1>
+            <div class="subtitle">Graduate Student at Beijing Technology and Business University</div>
+            <p>Focusing on Event Cameras, Computer Vision and AI Agent</p>
+            <div class="contact-links">
+                <a href="mailto:fuwei.dong@example.edu.cn"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/fuwei-dong"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/fuwei-dong"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-file-pdf"></i></a>
+                <a href="#"><i class="fab fa-google-scholar"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
+            <p>I am a graduate student at Beijing Technology and Business University, currently focusing on research in Event Cameras, Computer Vision, AIGC (AI-Generated Content), and AI Agents. I welcome any opportunities to discuss these topics and look forward to collaborating with individuals who share similar interests.</p>
+            <p>My research aims to bridge the gap between theoretical algorithms and practical applications, particularly in developing efficient vision systems for real-time scenarios. I am passionate about creating AI solutions that can adapt to dynamic environments and enhance human-computer interaction.</p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-flask"></i> Research Interests</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>Computer Vision</h3>
+                    <ul>
+                        <li>Image/video generation</li>
+                        <li>Video captioning</li>
+                        <li>3D reconstruction</li>
+                        <li>Scene understanding</li>
+                    </ul>
+                </div>
+                <div class="research-card">
+                    <h3>Event Cameras</h3>
+                    <ul>
+                        <li>Object tracking</li>
+                        <li>Human activity recognition</li>
+                        <li>Human pose estimation</li>
+                        <li>Low-light applications</li>
+                    </ul>
+                </div>
+                <div class="research-card">
+                    <h3>BCI & AI Agents</h3>
+                    <ul>
+                        <li>EEG signal processing</li>
+                        <li>Emotion recognition</li>
+                        <li>Adaptive AI systems</li>
+                        <li>Multi-agent collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-book"></i> Publications</h2>
+            <div class="publication-list">
+                <div class="publication-item">
+                    <div class="pub-title">Decoding and Visualizing Visual-Brain EEG for VR Scenes Using 3D Gaussian Splatting</div>
+                    <div class="pub-authors">Ming Li, Qiang Qu, Xiaoming Chen*, Longdu Han, Haiheng Li, Yiran Shan</div>
+                    <div>
+                        <span class="pub-conference">IEEE International Symposium on Mixed and Augmented Reality (ISMAR), 2025</span>
+                        <span class="pub-status">Under Review</span>
+                    </div>
+                    <div class="pub-links">
+                        <a href="#"><i class="fas fa-link"></i> Project Page</a>
+                        <a href="#"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="#"><i class="fas fa-video"></i> Presentation</a>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="pub-title">Enhanced Zoo Visiting Experience with Participatory Computing in a Wireless Sensor Network</div>
+                    <div class="pub-authors">Ming Li, Qiang Qu and Xiaoming Chen*</div>
+                    <div>
+                        <span class="pub-conference">International Conference on Computer Vision (ICCV), 2025</span>
+                        <span class="pub-status">Under Review</span>
+                    </div>
+                    <div class="pub-links">
+                        <a href="#"><i class="fas fa-link"></i> Project Page</a>
+                        <a href="#"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-database"></i> Dataset</a>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="pub-title">Enhanced Zoo Visiting Experience with Participatory Computing in a Wireless Sensor Network</div>
+                    <div class="pub-authors">Xiaoming Chen*, Johannes Karlsson, Tim Work, and Ming Li</div>
+                    <div>
+                        <span class="pub-conference">Companion Proceedings of the ACM Web Conference (WWW Companion), 2025</span>
+                    </div>
+                    <div class="pub-links">
+                        <a href="#"><i class="fas fa-link"></i> Project Page</a>
+                        <a href="#"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="#"><i class="fas fa-chart-bar"></i> Results</a>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="pub-title">Advancing Provincial Vision in Education with Event-Driven Human Pose Estimation</div>
+                    <div class="pub-authors">Ming Li, Aman Meng, Xiaoming Chen*, Chen Wang and Vera Chang</div>
+                    <div>
+                        <span class="pub-conference">IEEE International Conference on Teaching, Assessment and Learning for Engineering (TALE), 2024</span>
+                    </div>
+                    <div class="pub-links">
+                        <a href="#"><i class="fas fa-link"></i> Project Page</a>
+                        <a href="#"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="#"><i class="fab fa-youtube"></i> Video</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="research-card" style="margin-top: 20px;">
+                <h3>M.S. in Computer Science</h3>
+                <p><strong>Beijing Technology and Business University</strong> | 2023 - Present</p>
+                <p>Research Focus: Event Camera Applications, AI Agent Development</p>
+            </div>
+            <div class="research-card" style="margin-top: 15px;">
+                <h3>B.S. in Artificial Intelligence</h3>
+                <p><strong>Beijing Technology and Business University</strong> | 2019 - 2023</p>
+                <p>Thesis: Real-time Human Pose Estimation Using Event Cameras</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Fuwei Dong | Beijing Technology and Business University</p>
+            <p>Contact: fuwei.dong@example.edu.cn | +86 123 4567 8910</p>
+            <p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">"The future belongs to those who believe in the beauty of their dreams." - Eleanor Roosevelt</p>
+        </div>
+    </footer>
+</body>
+</html>
